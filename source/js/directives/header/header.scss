@@ -1,0 +1,46 @@
+.classic-events#classic-header {
+    width: 100%;
+    height: 68px;
+    padding: 10px;
+    margin: 0 0 10px;
+    @include set-box(border-box);
+
+    a {
+        text-decoration: none;
+        color: #000;
+        text-align: center;
+
+        &.classic-logo {
+            float: left;
+            // @include font(20px, 24px, 'fontRegular', #eae7ff);
+            display: block;
+            background: url('imgs/logo_title.png') no-repeat center center;
+            width: 298px;
+            height: 48px;
+        }
+    }
+
+    ul {
+        float: right;
+        height: 40px;
+        @include clearfix();
+
+        li {
+            float: left;
+            padding: 15px 20px;
+
+            a {
+                display: block;
+                @include font(14px, 18px, 'fontRegular', #eae7ff);
+
+                &:hover {
+                    border-bottom: 1px solid #eae7ff;
+                }
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}

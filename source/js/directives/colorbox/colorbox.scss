@@ -1,0 +1,42 @@
+.colorbox {
+    background: rgba(0,0,0,0.8);
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    overflow: hidden;
+
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    .colorbox-close {
+      width: 14px;
+      height: 14px;
+
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      @include font(14px, 14px, 'fontBold', #fff);
+    }
+
+    .colorbox-wrapper {
+      overflow: hidden;
+      visibility: hidden;
+      position: absolute;
+      z-index: 12;
+      border: 2px solid #e9ddea;
+      @include set-box(border-box);
+
+      transition: width 1s ease-in, height 1s ease-in;
+      -webkit-transition: width 1s ease-in, height 1s ease-in;
+      -moz-transition: width 1s ease-in, height 1s ease-in;
+
+    }
+
+    .loader {}
+}

@@ -1,0 +1,22 @@
+.classic-events.banner {
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  .wrapper {
+    border: 4px solid #e9ddea;
+    position: relative;
+    z-index: 1;
+    img {
+      width: 100%;
+    }
+    .wrapper-logo {
+      background: url('imgs/logo.png') no-repeat center center;
+      background-size: 350px auto;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 2;
+    }
+  }
+}

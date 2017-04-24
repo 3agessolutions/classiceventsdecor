@@ -1,0 +1,44 @@
+<div class="classic-events home">
+    <!-- <div class="header-top">
+        <div class="wrapper">
+            <ul>
+                <li><a href="#" title="subashraguram@gmail.com">classiceventschennai@gmail.com</a></li>
+                <li><a href="#" title="9790999569">9790999569</a></li>
+            </ul>
+        </div>
+    </div> -->
+    <div ng-if="home.imageLoaded">
+        <ce-header></ce-header>
+        <!-- Banner section -->
+        <div class="wrapper mobile">
+          <ul class="">
+              <li><a href="#" title="subashraguram@gmail.com">classiceventschennai@gmail.com</a></li>
+              <li><a href="#" title="9790999569">9790999569</a></li>
+          </ul>
+        </div>
+        <ce-banner></ce-banner>
+        <ce-about></ce-about>
+        <ce-gallery></ce-gallery>
+        <!-- <ce-testimonials></ce-testimonials> -->
+        <ce-contact></ce-contact>
+    </div>
+    <div ng-if="home.imageLoaded !== true" class="home-loader">
+        <div class="windows8 loader">
+            <div class="wBall" id="wBall_1">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_2">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_3">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_4">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_5">
+                <div class="wInnerBall"></div>
+            </div>
+        </div>
+    </div>
+</div>

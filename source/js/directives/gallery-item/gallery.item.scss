@@ -1,0 +1,24 @@
+.classic-events.gallery-item {
+    ul {
+        @include clearfix();
+
+        li {
+            width: 380px;
+            height: 252px;
+            float: left;
+            overflow: hidden;
+            margin: 0 10px 10px 0;
+            border: 2px solid #e9ddea;
+            text-align: center;
+            @include set-box(border-box);
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            img {
+                
+            }
+        }
+    }
+}
