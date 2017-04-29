@@ -4,11 +4,11 @@
         .module('classicevents')
         .directive('ceColorbox', ceColorbox);
 
-    function ceColorbox() {
+    function ceColorbox(colorBox) {
         return {
             restrict: 'A',
             link: function(scope, element, attrs) {
-              var cb = new colorBox();
+              var cb = colorBox.getInstance();
               cb.init(scope, element, attrs);
             }
         };

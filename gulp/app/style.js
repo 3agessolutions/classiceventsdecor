@@ -35,6 +35,7 @@ gulp.task('concat-scss', function() {
             rootPath + 'source/scss/theme/mixin.scss',
             rootPath + 'source/scss/common/*.scss',
             rootPath + 'source/js/**/*.scss',
+            rootPath + 'source/scss/theme/responsive.scss'
         ])
         .pipe(concat('style.scss'))
         //.pipe(gzip())
