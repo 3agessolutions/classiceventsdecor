@@ -3,11 +3,11 @@
         @include clearfix();
 
         li {
-            width: 380px;
+            width: 376px;
             height: 252px;
             float: left;
             overflow: hidden;
-            margin: 0 10px 10px 0;
+            margin: 0 5px 10px 5px;
             border: 2px solid #e9ddea;
             text-align: center;
             @include set-box(border-box);
@@ -17,7 +17,7 @@
             }
 
             img {
-                
+              width: 100%;
             }
         }
     }

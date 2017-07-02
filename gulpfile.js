@@ -3,6 +3,7 @@ var clean = require('gulp-clean');
 var requireDir = require('require-dir');
 var runSequence = require('run-sequence');
 var templateCache = require('gulp-angular-templatecache');
+var browserSync = require('browser-sync').create();
 
 var rootPath = './';
 var rootAppPath = './app/';
@@ -38,4 +39,12 @@ gulp.task('files', function() {
     return gulp.src([
         rootPath + 'source/files/*.jpg'
     ]).pipe(gulp.dest(rootAppPath + 'files'));
+});
+
+gulp.task('browserify', function() {
+    browserSync.init({
+        ui: false
+    });
+    gulp.watch(rootPath + "source/**/*.scss", ['styles']);
+    gulp.watch(rootPath + "source/**/*.html").on('change', browserSync.reload);
 });

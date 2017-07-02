@@ -1,5 +1,5 @@
 (function() {
-    angular.module('classicevents', ["ngResource", "ui.router", "ngFileUpload"]);
+    angular.module('classicevents', ["ngResource", "ui.router", "ngFileUpload", "duScroll"]);
     angular.module('classicevents')
         .config(function($compileProvider) {
             $compileProvider.preAssignBindingsEnabled(true);

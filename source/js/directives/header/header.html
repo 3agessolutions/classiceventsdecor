@@ -1,12 +1,12 @@
-<div class="classic-events" id="classic-header">
+<div class="classic-events" id="classic-header" sticky-header="fix-top">
     <div class="wrapper">
         <a class="classic-logo" href="#" title="Classic Events"></a>
 
         <ul>
-            <li><a href="" ng-click="header.goTo('about')">About</a></li>
-            <li><a href="" ng-click="header.goTo('gallery')">Gallery</a></li>
+            <li><a href="#" ng-click="header.goTo('about', $event)">About</a></li>
+            <li><a href="#" ng-click="header.goTo('gallery', $event)">Gallery</a></li>
             <!-- <li><a href="" ng-click="header.goTo('testimonials')">Testimonials</a></li> -->
-            <li><a href="" ng-click="header.goTo('contact')">Contact</a></li>
+            <li><a href="#" ng-click="header.goTo('contact', $event)">Contact</a></li>
         </ul>
     </div>
 </div>

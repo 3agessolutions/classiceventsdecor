@@ -56,9 +56,9 @@ gulp.task('js-bower-move', function() {
 gulp.task('js-app-move', function() {
     var appJs = gulp.src([rootPath + 'source/js/**/*.js'])
         .pipe(concat('app.js'))
-        .pipe(uglify({
-          mangle: false
-        }))
+        // .pipe(uglify({
+        //   mangle: false
+        // }))
         .pipe(gulp.dest(rootAppPath + 'js'));
 
     return appJs;

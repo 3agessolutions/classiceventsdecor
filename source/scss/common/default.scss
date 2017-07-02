@@ -1,34 +1,55 @@
 body {
-    background: url(imgs/bg_pattern.jpg) repeat; //#481950;
+  background: url("imgs/bg_pattern.jpg") repeat; //#481950;
+  @include font(14px, 18px, 'fontRegular', #eae7ff);
+
+  &.fix-top {
+    padding-top: 62px;
+
+    #classic-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: url(imgs/bg_pattern.jpg);
+      z-index: 9;
+    }
+  }
 }
 
 h2 {
-    text-align: center;
-    @include font(24px, 40px, 'fontBold', #eae7ff);
-    margin: 10px 0;
+  text-align: center;
+  @include font(1.7em, 2.8em, 'fontBold', #eae7ff);
+  margin: 10px 0;
 
-    &.title {
-
-    }
+  &.title {}
 }
 
 h3 {
-  @include font(20px, 32px, 'fontRegular', #eae7ff);
+  @include font(1.4em, 2.2em, 'fontRegular', #eae7ff);
   text-align: center;
   margin: 10px 0;
-
+  &.sub-title {
+    text-decoration: underline;
+  }
 }
 
 h4 {
-  @include font(18px, 28px, 'fontRegular', #eae7ff);
+  @include font(1.2em, 2em, 'fontRegular', #eae7ff);
   text-align: center;
   margin: 10px 0;
-  
 }
 
 p {
-    text-align: justify;
-    @include font(14px, 18px, 'fontRegular', #eae7ff);
-    margin: 0 0 10px;
-    padding: 0 10px;
+  text-align: justify;
+  @include font(1em, 1.2em, 'fontRegular', #eae7ff);
+  margin: 0 0 10px;
+  padding: 0 10px;
+
+
+}
+
+ul {
+  &.list-style {
+    list-style: disc;
+  }
 }
